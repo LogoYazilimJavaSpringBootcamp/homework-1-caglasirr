@@ -30,7 +30,7 @@ Cem DIRMAN
 ### MAVEN KOMUTLARI
 
 ####mvn clean: Projenin derlenmesi sırasında oluşan target klasörünün silinmesini sağlar.
-PS C:\Users\PC\Documents\GitHub\homework-1-caglasirr> mvn clean 
+<br>PS C:\Users\PC\Documents\GitHub\homework-1-caglasirr> mvn clean 
 <br>[INFO] Scanning for projects...
 <br>[INFO]
 <br>[INFO] -----------------------< org.example:Homework1 >------------------------
@@ -44,11 +44,11 @@ PS C:\Users\PC\Documents\GitHub\homework-1-caglasirr> mvn clean
 <br>[INFO] ------------------------------------------------------------------------
 <br>[INFO] Total time:  0.881 s
 <br>[INFO] Finished at: 2022-06-15T22:25:45+03:00
-<br>[INFO] ------------------------------------------------------------------------
+<br>[INFO] ------------------------------------------------------------------------<br>
 
 ####mvn validate: Projenin target dosyasını siler ve daha sonra hatalı kısımları tarar.
 
-<br>[INFO] Scanning for projects...
+[INFO] Scanning for projects...
 <br>[INFO]
 <br>[INFO] -----------------------< org.example:Homework1 >------------------------
 <br>[INFO] Building Homework1 1.0-SNAPSHOT
@@ -57,11 +57,11 @@ PS C:\Users\PC\Documents\GitHub\homework-1-caglasirr> mvn clean
 <br>[INFO] BUILD SUCCESS
 <br>[INFO] ------------------------------------------------------------------------
 <br>[INFO] Total time:  0.223 s
-<br><INFO> Finished at: 2022-06-16T00:20:59+03:00
+<br><INFO> Finished at: 2022-06-16T00:20:59+03:00 <br>
 
 ####mvn compile: Projeyi clean ve validate edip derler.
 
-<br>[INFO] Scanning for projects...
+[INFO] Scanning for projects...
 <br>[INFO]
 <br>[INFO] -----------------------< org.example:Homework1 >------------------------
 <br>[INFO] Building Homework1 1.0-SNAPSHOT
@@ -82,7 +82,7 @@ PS C:\Users\PC\Documents\GitHub\homework-1-caglasirr> mvn clean
 <br>[INFO] ------------------------------------------------------------------------
 <br>[INFO] Total time:  4.626 s
 <br>[INFO] Finished at: 2022-06-16T00:23:16+03:00
-<br>[INFO] ------------------------------------------------------------------------
+<br>[INFO] ------------------------------------------------------------------------<br>
 <br>PS C:\Users\PC\Documents\GitHub\homework-1-caglasirr>
 
 ####mvn test: Projeyi derler ve test sınıflarını çalıştırır.
@@ -116,6 +116,6 @@ PS C:\Users\PC\Documents\GitHub\homework-1-caglasirr> mvn test
 <br>[INFO] Total time:  2.690 s
 <br>[INFO] Finished at: 2022-06-16T00:25:40+03:00
 <br>[INFO] ------------------------------------------------------------------------
-<br>PS C:\Users\PC\Documents\GitHub\homework-1-caglasirr> 
+<br>PS C:\Users\PC\Documents\GitHub\homework-1-caglasirr> <br>
 
 
