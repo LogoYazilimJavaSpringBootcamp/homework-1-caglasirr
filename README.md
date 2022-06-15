@@ -26,3 +26,96 @@ kodu yazın.
 
 Bu dosya Patika.dev - LOGO Java & Spring Boot eğitimi dışında kullanılamaz.
 Cem DIRMAN
+***
+### MAVEN KOMUTLARI
+
+####mvn clean: Projenin derlenmesi sırasında oluşan target klasörünün silinmesini sağlar.
+PS C:\Users\PC\Documents\GitHub\homework-1-caglasirr> mvn clean 
+<br>[INFO] Scanning for projects...
+<br>[INFO]
+<br>[INFO] -----------------------< org.example:Homework1 >------------------------
+<br>[INFO] Building Homework1 1.0-SNAPSHOT                                         
+<br>[INFO] --------------------------------[ jar ]---------------------------------
+<br>[INFO]
+<br>[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Homework1 ---
+<br>[INFO] Deleting C:\Users\PC\Documents\GitHub\homework-1-caglasirr\target
+<br>[INFO] ------------------------------------------------------------------------
+<br>[INFO] BUILD SUCCESS
+<br>[INFO] ------------------------------------------------------------------------
+<br>[INFO] Total time:  0.881 s
+<br>[INFO] Finished at: 2022-06-15T22:25:45+03:00
+<br>[INFO] ------------------------------------------------------------------------
+
+####mvn validate: Projenin target dosyasını siler ve daha sonra hatalı kısımları tarar.
+
+<br>[INFO] Scanning for projects...
+<br>[INFO]
+<br>[INFO] -----------------------< org.example:Homework1 >------------------------
+<br>[INFO] Building Homework1 1.0-SNAPSHOT
+<br>[INFO] --------------------------------[ jar ]---------------------------------
+<br>[INFO] ------------------------------------------------------------------------
+<br>[INFO] BUILD SUCCESS
+<br>[INFO] ------------------------------------------------------------------------
+<br>[INFO] Total time:  0.223 s
+<br><INFO> Finished at: 2022-06-16T00:20:59+03:00
+
+####mvn compile: Projeyi clean ve validate edip derler.
+
+<br>[INFO] Scanning for projects...
+<br>[INFO]
+<br>[INFO] -----------------------< org.example:Homework1 >------------------------
+<br>[INFO] Building Homework1 1.0-SNAPSHOT
+<br>[INFO] --------------------------------[ jar ]---------------------------------
+<br>[INFO]
+<br>[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Homework1 ---
+<br>[WARNING] Using platform encoding (Cp1254 actually) to copy filtered resources, i.e. build is platform dependent!
+<br>[INFO] Copying 0 resource
+<br>[INFO]
+<br>[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Homework1 ---
+<br>[INFO] Changes detected - recompiling the module!
+<br>[WARNING] File encoding has not been set, using platform encoding Cp1254, i.e. build is platform dependent!
+<br>[INFO] Compiling 9 source files to C:\Users\PC\Documents\GitHub\homework-1-caglasirr\target\classes
+<br>[WARNING] /C:/Users/PC/Documents/GitHub/homework-1-caglasirr/src/main/java/CollectionFramework/Main.java: Some input files use unchecked or unsafe operations.
+<br>[WARNING] /C:/Users/PC/Documents/GitHub/homework-1-caglasirr/src/main/java/CollectionFramework/Main.java: Recompile with -Xlint:unchecked for details.
+<br>[INFO] ------------------------------------------------------------------------
+<br>[INFO] BUILD SUCCESS
+<br>[INFO] ------------------------------------------------------------------------
+<br>[INFO] Total time:  4.626 s
+<br>[INFO] Finished at: 2022-06-16T00:23:16+03:00
+<br>[INFO] ------------------------------------------------------------------------
+<br>PS C:\Users\PC\Documents\GitHub\homework-1-caglasirr>
+
+####mvn test: Projeyi derler ve test sınıflarını çalıştırır.
+
+PS C:\Users\PC\Documents\GitHub\homework-1-caglasirr> mvn test
+<br>[INFO] Scanning for projects...
+<br>[INFO]
+<br>[INFO] -----------------------< org.example:Homework1 >------------------------
+<br>[INFO] Building Homework1 1.0-SNAPSHOT
+<br>[INFO] --------------------------------[ jar ]---------------------------------
+<br>[INFO]
+<br>[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Homework1 ---
+<br>[WARNING] Using platform encoding (Cp1254 actually) to copy filtered resources, i.e. build is platform dependent!
+<br>[INFO] Copying 0 resource
+<br>[INFO]
+<br>[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Homework1 ---
+<br>[INFO] Nothing to compile - all classes are up to date
+<br>[INFO]
+<br>[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Homework1 ---
+<br>[WARNING] Using platform encoding (Cp1254 actually) to copy filtered resources, i.e. build is platform dependent!
+<br>[INFO] skip non existing resourceDirectory C:\Users\PC\Documents\GitHub\homework-1-caglasirr\src\test\resources
+<br>[INFO]
+<br>[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ Homework1 ---
+<br>[INFO] Nothing to compile - all classes are up to date
+<br>[INFO]
+<br>[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ Homework1 ---
+<br>[INFO] No tests to run.
+<br>[INFO] ------------------------------------------------------------------------
+<br>[INFO] BUILD SUCCESS
+<br>[INFO] ------------------------------------------------------------------------
+<br>[INFO] Total time:  2.690 s
+<br>[INFO] Finished at: 2022-06-16T00:25:40+03:00
+<br>[INFO] ------------------------------------------------------------------------
+<br>PS C:\Users\PC\Documents\GitHub\homework-1-caglasirr> 
+
+
