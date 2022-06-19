@@ -6,6 +6,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductService {
+
+    private ProductService() {}
+
+    private static ProductService productService = new ProductService();
+
+    public static ProductService getProductService(){
+        return productService;
+    }
+
     public List<Product> createProducts(){
         List<Product> products = new ArrayList<>();
         products.add(new Product("iPhone 11", 200));

@@ -9,19 +9,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        CustomerService customerService = new CustomerService();
-        OrderService orderService = new OrderService();
+        CustomerService customerService = CustomerService.getCustomerService();
+        OrderService orderService = OrderService.getOrderService();
         List<Customer> customerList = new ArrayList<>();
 
 
-
-        Customer customer1 = new Customer("Cağla", "Sır", new OrderService().createOrders(7));
-        Customer customer2 = new Customer("Canan", "Sır", new OrderService().createOrders(6));
-        Customer customer3 = new Customer("Yılmaz", "Sır", new OrderService().createOrders(5));
-        Customer customer4 = new Customer("Gülay", "Sır", new OrderService().createOrders(4));
-        Customer customer5 = new Customer("Ecrin", "Sır", new OrderService().createOrders(3));
-        Customer customer6 = new Customer("Selen", "Sır", new OrderService().createOrders(2));
-        Customer customer7 = new Customer("Ali", "Sır", new OrderService().createOrders(1));
+        Customer customer1 = new Customer("Cağla", "Sır", orderService.createOrders(7));
+        Customer customer2 = new Customer("Canan", "Sır", orderService.createOrders(6));
+        Customer customer3 = new Customer("Yılmaz", "Sır", orderService.createOrders(5));
+        Customer customer4 = new Customer("Gülay", "Sır", orderService.createOrders(4));
+        Customer customer5 = new Customer("Ecrin", "Sır", orderService.createOrders(3));
+        Customer customer6 = new Customer("Selen", "Sır", orderService.createOrders(2));
+        Customer customer7 = new Customer("Ali", "Sır", orderService.createOrders(1));
         customerList.add(customer1);
         customerList.add(customer2);
         customerList.add(customer3);

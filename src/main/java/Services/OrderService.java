@@ -9,9 +9,18 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class OrderService {
+    //Singleton Design Pattern'i implemente etmek için constructor private yapılmıştır.
+    private OrderService() {}
+
+    private static OrderService orderService = new OrderService();
+
+    public static OrderService getOrderService(){
+        return orderService;
+    }
+
     public Order createOrders(int orderNumber){
 
-        List<Product> products = new ProductService().createProducts();
+        List<Product> products = ProductService.getProductService().createProducts();
 
         Order order = new Order(products.stream().limit(orderNumber).collect(Collectors.toList()));;
 
